@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- link Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- font-awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    
+</head>
+<body>
+    <div class="container-fluid" style="background:linear-gradient(#000046,#1CB5E0)" id="idForm"> -->
+        <div class="row " style="background: url('Background1.mp4');" >
+            <div class="col-lg-4 col-md-4 "></div>
+            <div class="col-lg-4 col-md-4 ">
+                <h1 class="fs-1 text-center mt-5 registration">Registration</h1>
+            <p class="fs-4 text-center registration">for id card <i class="fa-solid fa-id-card-clip"></i></p>
+            </div>
+
+            <div class="col-lg-4 col-md-4 "></div>
+            
+        </div>
+
+        <div class="row mt-5" >
+            <div class="col-lg-2"></div>
+
+            <div class="col-lg-8" >
+                <div class="card background">
+                    <div class="card-body">
+                        <p style="background-color: #f2c23d; width: 100%; height:30px;">
+                            <marquee behavior="" direction="" style="color: red;">It is necessary to fill all the fields.</marquee>
+                        </p>
+                        <form class="row g-3 " id="formfield">
+                            <div class="col-md-6">
+                              <label for="inputEnroll" class="form-label">Enrollment No. <strong style="color: red;">*</strong></label>
+                              <input type="text" class="form-control" id="inputEnroll" >
+                            </div>
+                            <div class="col-md-6">
+                              <label for="inputBranch" class="form-label">Branch Name <strong style="color: red;">*</strong></label>
+                              <select id="inputBranch" class="form-select">
+                                <option selected>Choose...</option>
+                                <option>Computer Science And Engineering</option>
+                                <option>Information Technology</option>
+                                <option>Electronics Engineering</option>
+                              </select>
+                            </div>
+                            <div class="col-md-6">
+                              <label for="inputName" class="form-label">Student Name <strong style="color: red;">*</strong></label>
+                              <input type="text" class="form-control" id="inputName">
+                            </div>
+                            <div class="col-md-6">
+                              <label for="inputFather" class="form-label">Father's Name <strong style="color: red;">*</strong></label>
+                              <input type="text" class="form-control" id="inputFather">
+                            </div>
+                            <div class="col-md-6">
+                              <label for="inputDob" class="form-label">Date of birth <strong style="color: red;">*</strong></label>
+                              <input type="date" class="form-control" id="inputDob">
+                            </div>
+                            <div class="col-md-6">
+                              <label for="inputMON" class="form-label">Mobile No. <strong style="color: red;">*</strong></label>
+                              <input type="number" class="form-control" id="inputMON">
+                            </div>
+                            <div class="col-md-6">
+                              <label for="inputAMON" class="form-label">Alternate Mobile No. <strong style="color: red;">*</strong></label>
+                              <input type="number" class="form-control" id="inputAMON"   >
+                            </div>
+                            <div class="col-md-6">
+                              <label for="inputIssueDate" class="form-label">Issue Date <strong style="color: red;">*</strong></label>
+                              <input type="date" class="form-control" id="inputIssueDate" >
+                            </div>
+                            <div class="col-12">
+                              <label for="inputAddress" class="form-label">Address <strong style="color: red;">*</strong></label>
+                              <textarea class="form-control" id="inputAddress" rows="3"></textarea>
+                            </div>
+                            <div class="col-md-6">
+                              <label for="inputPicture" class="form-label">Upload Picture <strong style="color: red;">*</strong></label>
+                              <input type="file" id="inputImage" class="form-control" accept="image/png, image/jpeg, image/jpg"  >
+                            </div>
+                            <div class="col-md-6">
+                              <label for="inputSign" class="form-label">Upload Signature <strong style="color: red;">*</strong></label>
+                              <input type="file" id="inputSign" class="form-control" accept="image/png, image/jpeg, image/jpg"  >
+                            </div> 
+                          </form>
+                          <br>
+                          <div style="text-align: center;">
+                            <button onclick="generate()"  type="submit" class=" generate-button" >Generate</button>
+                         </div>
+                          
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-lg-2" ></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12" style="height: 5rem;"></div>
+        </div>
+    </div> 
+    <!-- Loading -->
+     <div class="container-fluid" id="idLoading">
+        <div class="loader">
+            <img src="Animation - 1733903689407.gif" alt="laod">
+        </div>
+    </div>
+    <!-- Template for id card -->
+    <div class="container-fluid" id="card-template">
+      <div class="row mt-lg-5">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8 mt-lg-5" style=" display: flex;gap: 10px; justify-content: center;" id="idCard">
+          
+           <div class="front">
+            <!-- top -->
+             <div class="top">
+                <div style="  display: flex; justify-content: center;">
+                  <img src="gpa.png" alt="" width="33px">
+                </div>
+                <div>
+                  <h6 style="font-size: 8px; font-weight: bold; text-align: center; margin-top: 5px;">GOVERNMENT POLYTECHNIC AURAI BHADOHI</h6>
+                  <p style="font-size: 7px; text-align: center;margin-top: -8px;" id="branchField"></p>
+                </div>
+                 <div class="profile-pic">
+                   <img id="imageField" src="image.jpg" width="90px" height="90px" style="border: none;border-radius: 50%;">
+                 </div>
+             </div>
+             <!-- middle -->
+             <div class="middle" style=" width: 0;
+             height: 0;
+             border-bottom: 100px solid #0D92F4;
+             border-left: 188px solid transparent;">
+             
+             </div>
+             <!-- bottom -->
+             <div class="bottom">
+              <span style="width: 188px; height: 3px; background-color: #0D92F4; position:absolute; top:263px;"></span>
+              <div class="student-name">
+                <h5 id="studentField" style="font-size: 10px; font-weight: bold; color: white; text-transform: uppercase;"></h5>
+              </div>
+              <div class="detals">
+                <table>
+                  <tr>
+                    <td>Enrollment No</td>
+                    <td>:</td>
+                    <td id="enrollField"></td>
+                  </tr>
+                  <tr>
+                    <td>Father's Name</td>
+                    <td>:</td>
+                    <td id="fatherField" style="text-transform: capitalize;"></td>
+                  </tr>
+                  <tr>
+                    <td>Date Of Birth</td>
+                    <td>:</td>
+                    <td id="dobField"></td>
+                  </tr>
+                  <tr>
+                    <td>Mobile No</td>
+                    <td>:</td>
+                    <td id="mobileField"></td>
+                  </tr>
+                </table>
+              </div>
+               <div style="display: flex; justify-content:space-between;">
+                 <div>
+                  <img  src="Sign (2).png" width="50px">
+                 <p style="font-size: 10px; text-align: center; width: 50px; color: white;"> H.O.D. </p>
+                 </div>
+                 <div>
+                  <img src="Sign (2).png" width="50px">
+                 <p style="font-size: 10px; text-align: center; width: 50px; color: white;">Principal</p>
+                 </div>
+               </div>
+             </div>
+           </div>
+           <div class="back">
+              <div class="Address">
+                 <p id="addressField" style="font-size: 10px; text-align: center;"></p>
+              </div>
+              <div>
+                <p style="font-size: 10px; text-align: center;">Alternate No :<a id="altNumber"></a></p>
+              </div>
+              <div>
+                <p style="font-size: 12px; font-weight: bold; text-align: center;">Issue Date :<a id="issuedateField"></a></p>
+                <p style="font-size: 12px; font-weight: bold; text-align: center; position: relative; top: -18px;">valid for 3 years.</p>
+              </div>
+              <div style="width: 60px; height: 40px; margin-left: 8px;">
+                <img id="studentSign" src="Sign (2).png" width="50px">
+                 <p style="font-size: 10px; text-align: center; width: 50px;">Student</p>
+              </div>
+              <div class="footer px-3" style="width: 100%; height: 60px; background-color:#0D92F4 ; margin-top: 15px;">
+              
+                  <p class="para pt-1"><i class="fa-solid fa-phone"></i> +91 9451846978</p>
+                  <p class="para" style="margin-top: -15px;"><i class="fa-solid fa-envelope"></i> principalgpaurai@gmail.com</p>
+                  <p class="para" style="margin-top: -15px;"><i class="fa-solid fa-location-dot"></i> Katehara, Aurai, Uttar Pradesh 221301</p>
+                  <p class="para" style="margin-top: -15px;"><i class="fa-solid fa-globe"></i> https://www.gpaurai.ac.in/</p>
+              </div>
+           </div> 
+        </div>
+         <div class="row mt-lg-5">
+          <div class="col-lg-3"></div>
+          <div class="col-lg-6">
+            <button id="download" class="btn btn-primary" onclick="download()">Download</button>
+            <button id="createAnother" class="btn btn-warning" onclick="realoadingpage()">Create another</button>
+          </div>
+         
+          <div class="col-lg-3"></div>
+         </div>
+        <div class="col-lg-2" ></div>
+      </div>
+    </div>
+      
+<script src="script1.js"></script>
+ 
+</body>
+</html

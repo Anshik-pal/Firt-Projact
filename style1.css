@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Index Page  */
+
+.ID{
+    font-size:110px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    font-weight: bold   !important;
+    margin-top: 100px !important;
+    background: -webkit-linear-gradient(#04d2ed,#0349fc, #cb02e5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow:5px 5px  white;
+}
+.cd{
+    font-size: 100px ;   
+    background: -webkit-linear-gradient(#04d2ed,#0349fc, #cb02e5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow:5px 5px  white;
+}
+.image{
+    /* margin-top: 100px; */
+}
+.block{
+    width: 300px;
+    height: 70px;
+    background-color:black;
+    border-radius:5px ;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.glow::before , .glow::after {
+     content:'';
+     position: absolute;
+     top: -2px;
+     left: -2px;
+     border-radius: 5px;
+     background: linear-gradient(45deg,#e6fb04,#ff6600,#00ff66,#0ff
+     ,#ff00ff,#ff0099,#6e0dd0,#ff3300,#099fff);
+     background-size: 400%;
+     width: calc(100% + 5px);
+     height: calc(100% + 5px);
+     z-index: -1;
+     animation: animate 20s linear infinite;
+}
+@keyframes animate {
+    0% {
+        background-position: 0 0;
+
+    }
+    50%{
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+.glow::after {
+    filter: blur(40px);
+    
+}
+ /* Registration Page */
+
+ .background{
+     background: transparent !important;
+     box-shadow:5px 5px 10px  !important;
+ }
+ label{
+    color:white;
+ }
+ input,select,textarea{
+    background: transparent !important;
+    color: white !important;
+ }
+ option{
+    background-color: black;
+ }
+ .generate-button{
+    background:linear-gradient(#8E2DE2,#4A00E0);
+    color: white !important;
+    border: none !important;
+    border-radius: 5px !important;
+    width: 300px;
+    height: 70px;
+    font-size: 30px !important;
+
+ } 
+ /* id-card-form */
+
+  /* for Hide Arrows From Input Number */
+ /* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+ .registration{
+    background: -webkit-linear-gradient(#f5e502,#EB5B00, #D91656);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+ }
+ .generatebtn{
+    width: 150px;
+    height: 50px;
+    font-size: 20px !important;
+    margin-top: 10px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+ }
+ #idLoading{
+    background:linear-gradient(#000046,#1CB5E0);
+ }
+ .loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+ }
+
+#idLoading{
+    display:none;
+    position: relative;
+    z-index: 2;
+}
+
+/* id card template */
+/* front of id-card */
+#card-template{
+    display:none;
+}
+.front{
+    width:190px;
+    height: 309px;
+    border: 1px solid black;
+}
+ .top{
+    width: 100%;
+    height: 62px;
+    background-color:white;
+   margin-top: 5px;
+ }
+ /* profile-pic */
+ .profile-pic{
+    width: 95px;
+    height: 95px;
+    border: none ;
+    border-radius: 50%;
+    background-color:white;
+    position: relative;
+    left: 50%;
+    top: -5px;
+    transform: translate(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ .bottom{
+    width: 100%;
+    height: 140px;
+    background-color: #0D92F4;  
+ }
+ .student-name{
+    width: 100%;
+    height: 15px;
+    /* background-color: red; */
+    position: relative;
+    top: 10px;
+    display: flex;
+    justify-content: center;
+ }
+
+ table{
+    width: 100%;
+    font-size: 10px;
+    margin-left: 10px;
+    margin-top: 13px;
+ }
+ table tr td{
+    color: white;
+ }
+/* back of id-card */
+.back{
+    width:190px;
+    height: 309px;
+    border: 1px solid black;
+}
+.Address{
+    width: 100%;
+    height: 60px;
+    /* background-color: red; */
+    margin-top: 33px;
+}
+.para{
+    font-size: 8px;
+    color: white;
+}
+
+
+
+
